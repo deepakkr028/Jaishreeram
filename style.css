@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap"); 
+/* @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');  */
+.jaishreeram{
+    width: 100vw;
+    text-align: center;
+}
+.jaishreeram span {
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color:black;
+    font-size: 80px;
+    text-shadow: 0 0px #967314, 0 0px #942e5e;
+    transform: translate(0,100%) rotate(4deg);
+    animation: jump 2s ease-in-out infinite ;
+    display: inline-block;
+       /* font-family: 'Alumni Sans Collegiate One', sans-serif;  */
+        font-family: "Titan One", cursive;  
+        color:orange;      
+}
+.jaishreeram span:nth-child(1){
+    animation-delay: 120ms;
+}
+.jaishreeram span:nth-child(2){
+    animation-delay: 240ms;
+}
+.jaishreeram span:nth-child(3){
+    animation-delay: 360ms;
+}
+.jaishreeram span:nth-child(4){
+    animation-delay: 480ms;
+}
+.jaishreeram span:nth-child(5){
+    animation-delay: 600ms;
+}
+.jaishreeram span:nth-child(6){
+    animation-delay: 720ms;
+}
+.jaishreeram span:nth-child(8){
+    animation-delay: 840ms;
+}
+.jaishreeram span:nth-child(9){
+    animation-delay: 960ms;
+}
+.jaishreeram span:nth-child(10){
+    animation-delay: 1080ms;
+}
+.jaishreeram span:nth-child(11){
+    animation-delay: 1200ms;
+}
+@keyframes jump{
+    33%{
+        text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+    }
+    50%{
+        transform: translate(0, 0) rotate(-4deg);
+        text-shadow: 0 0px #b366d6, 0 0px #9284ac;
+    }
+    66.67%{
+        text-shadow: 0 -60px #4074d5, 0 -150px #aeb124;
+    }
+}
+html {
+    width: auto;
+    height:auto;
+  }
+  body {
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: orangered;
+  }
+@media screen and (max-height: 200px) {
+    .jaishreeram {
+      transform: scale(0.3, 0.3);
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .jaishreeram span {
+      font-size: 45px;
+    }
+  }
